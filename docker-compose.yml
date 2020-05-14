@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
        MYSQL_ROOT_PASSWORD: example123
-       MYSQL_DATABASE: mmdb
+       MYSQL_DATABASE: myshop
     volumes:
       - ./mysql/config/my.cnf:/etc/my.cnf
       - ./mysql/init:/docker-entrypoint-initdb.d/   
