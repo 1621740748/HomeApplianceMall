@@ -37,7 +37,7 @@ public class DBUtil {
 	  driver="com.mysql.jdbc.Driver";
 	  url="jdbc:mysql://localhost:3306/myshop?useUnicode=true&characterEncoding=UTF-8";
 	  username="root";
-	  password="cxx123";
+	  password="example123";
     }
     
 	//加载驱动程序，得到连接对象
