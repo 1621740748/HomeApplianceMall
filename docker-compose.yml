@@ -1,0 +1,15 @@
+version: '3'
+services:
+  db:
+      image: mysql:5.6
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+       MYSQL_ROOT_PASSWORD: example123
+       MYSQL_DATABASE: mmdb
+    volumes:
+      - ./mysql/config/my.cnf:/etc/my.cnf
+      - ./mysql/init:/docker-entrypoint-initdb.d/   
+    ports:
+      - 3306:3306   
+
